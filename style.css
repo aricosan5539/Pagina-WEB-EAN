@@ -1,0 +1,260 @@
+:root{
+    --color1: rgb(0, 0, 0);
+    --color2: rgba(158, 130, 37, 0.877);
+    --color3: rgba(11,194,211, 0.623);
+    --fondo: #f2f2f2;
+    --titulos: 33px;
+    --margenes: 90px;
+    --espacios: 10px;
+    --espacios-contenido:45px;
+  }
+
+body {
+    font-family: 'Titillium Web', sans-serif;
+}
+h1 { font-size: 78px; font-weight: 600; }
+h2 {font-size: 50px;  
+color: gold;
+}
+
+h4 {font-size: 35px;}
+
+p {
+    font-size: 22px;
+    color: gray;
+    line-height: 1.8;
+    
+}
+.centrado{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
+.navbar {
+
+    width: 100%;
+  position: fixed;
+  box-shadow: 0 0 10px 0 rgba(0,0,0,.5)
+}
+
+.navbar1{
+    background: transparent;
+  height: 80px;
+  color:#fff;
+}
+.navbar2{
+    background: var(--fondo);
+  height:100px;
+  color:#000;
+}
+
+.nav-link { color: black;}
+.nav-link  { color: black;}
+.logo-brand{
+    min-width: 20px;
+    max-width: 60px;  
+}
+#hero{
+    background-image: url("plantillafondo .jpg") ;
+    padding-top: 90px;
+    min-height: 700px;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    color: blanchedalmond;
+
+}
+#hero p{
+    color: gold;
+}
+.content-center {
+    max-width: 900px;
+    margin: 0 auto 50px auto;
+    text-align: center;
+    color: gold;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    text-align: center;
+}
+
+.contenedor{
+    margin:auto;
+    padding: var(--margenes) 0;
+    width: 90%;
+    max-width: 1000px;
+    text-align: center;
+    overflow: hidden;
+  }
+  
+  .contenedor p{
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--color1);
+  }
+  
+ 
+.card{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .content-card{
+    width: 100%;
+    box-shadow: 0 0 15px 0 rgba(0,0,0,.5);
+    overflow: hidden;
+    height:700px;
+  }
+  
+  .hoteles{
+    height: 60%;
+  }
+  
+  .content-card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .texto-team{
+    height: 20%;
+    width: 100%;
+    padding: var(--espacios) 0;
+  }
+
+
+
+
+.plans {
+    padding:50px 80px; 
+    border-radius: 4px;
+    min-width: 150px;
+    justify-content: center;
+}
+
+.plan-light {
+   
+    background-color: white;
+    border: 5px solid black;
+    justify-content: center;
+    
+    
+
+
+}
+
+.plan-dark {
+    background-color: white;
+    border: 5px solid black;
+    justify-content: center;
+    
+
+}
+
+
+footer{background:url(teclado.jpg);}
+
+.marca-logo{
+    width: 40%;
+    margin: auto;
+    margin-bottom: var(--espacios);
+  }
+  .marca-logo img{
+    width: 100%;
+  }
+  .iconos{
+    display: flex;
+    margin: auto;
+    justify-content: space-around;
+    width: 100%;
+  }
+  .fab{
+    font-size:60px;
+    color: #FFF;
+    margin-bottom: var(--espacios);
+    display: inline-block;
+  }
+  
+  footer p{
+    margin-top:var(--espacios);
+  }
+  
+  @media screen and (max-width: 700px){
+    .nav2{
+      color: #fff;
+    }
+  
+    .icono{
+      display:block;
+      cursor: pointer;
+    }
+  
+    .enlaces{
+      position: fixed;
+      top:80px;
+      background: #2c3e50;
+      left: 0;
+      height: 100%;
+      transition: 1s;
+      width: 0;
+      overflow: hidden;
+    }
+  
+    .enlaces a{
+      display: block;
+      width: 100%;
+      height: 50px;
+      padding: 20px;
+      text-align: center;
+      background: #34495e;
+      color:#fff;
+    }
+  
+    .textos>h1{font-size: 70px;}
+    .textos>h2{font-size:35px;}
+  
+    .content-card{
+      width: 48%;
+      margin-bottom:var(--margenes);
+    }
+  
+    :root{
+      --margenes: 30px;
+    }
+  }
+  
+  @media screen and (max-width: 500px){
+    :root{
+      --espacios-contenido: 25px;
+    }
+  
+    .content-card{
+      width: 90%;
+    }
+  
+    .caja-servicios{
+      width: 90%;
+      margin-bottom: var(--margenes);
+    }
+  
+    .cont-work{
+      width: 85%;
+    }
+  
+    .marca-logo{
+      width: 80%;
+    }
+  
+    .iconos{
+      margin: auto;
+    }
+  }
